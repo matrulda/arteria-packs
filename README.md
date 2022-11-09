@@ -47,11 +47,16 @@ You will need to have the following installed:
 - [docker](https://docs.docker.com/)
 - [docker-compose](https://docs.docker.com/compose/) 
 - make
+
+You also need to download Illumina software bcl2fastq manually since Illumina requires that you register before donwloading. 
+- Download the [zip file](https://support.illumina.com/softwaredownload.html?assetId=e8ed3335-5201-48ff-a2bc-db4bfb792c85&assetDetails=bcl2fastq2-v2-20-0-linux-x86-64.zip) containing the rpm
+- Extract the rpm from the zip file
  
 Installation
 ------------
 ```
 git clone https://github.com/arteria-project/arteria-packs
+mv bcl2fastq2-v2.20.0.422-Linux-x86_64.rpm arteria-packs/docker-images/bcl2fastq-service/
 cd arteria-packs
 make up
 ```
