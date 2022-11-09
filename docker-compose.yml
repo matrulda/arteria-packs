@@ -28,7 +28,7 @@ services:
       - ./docker-runtime/entrypoint.d:/st2-docker/entrypoint.d
       - ./docker-runtime/st2.d:/st2-docker/st2.d
       - ./docker-conf/stackstorm.env:/st2-docker/env
-    dns_search: .
+#   dns_search: .
     depends_on:
       - mongo
       - rabbitmq
